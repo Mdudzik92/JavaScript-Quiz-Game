@@ -10,31 +10,29 @@
 			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 
 	<body>
-		<div class="timer">Time: <span id="time">0</span></div>
+		<div class="timer"><span id="time">Time: 0</span></div>
 
 		<!-- Home page -->
 
-		<div class="container">
-				<div id="start-screen" class="start">
-					<h1>JavaScript Quiz</h1>
-					<p>
-						Answer the following JavaScript-related questions to the best of
+<div class="wrapper">
+          <div id="start-screen" class="start">
+            <h1>JavaScript Quiz</h1>
+            <p>
+              Answer the following JavaScript-related questions to the best of
 						your ability within the time limit.<br />
 						Each incorrect answer will penalize your score time by 10 seconds!!!
-					</p>
-					<button id="startButton">
-						Start the quiz!
-					</button>
-				</div>
+            </p>
+            <button id="start">Start Quiz</button>
+          </div>
 
 		<!-- JS questions area -->
 
 		<div id="questions" class="hide">
-			<h2 id="question-space">Question</h2>
+			<h2 id="question-title">Question</h2>
 				<div id="choices" class="choices"></div>
 		</div>
 
@@ -43,6 +41,7 @@
 			<p>Your final score is <span id="final-score"></span>.</p>
 		</div>
 
-		<script src="./script.js"></script>
+    <script src="js/questions.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
