@@ -67,28 +67,7 @@ function questionClick() {
 
 		// Display new time on page
 		timerEl.textContent = time;
-
-		feedbackEl.textContent = "Wrong!";
-	} else {
-		feedbackEl.textContent = "Correct!";
 	}
-
-	// Flash right/wrong feedback on page for half a second
-	feedbackEl.setAttribute("class", "feedback");
-	setTimeout(function () {
-		feedbackEl.setAttribute("class", "feedback hide");
-	}, 1000);
-
-	// Moving on to next question
-	currentQuestionIndex++;
-
-	// Checking if the quiz questions are through
-	if (currentQuestionIndex === questions.length) {
-		quizEnd();
-	} else {
-		getQuestion();
-	}
-}
 
 function startTimer() {
 	time--;
