@@ -1,17 +1,31 @@
-# homework04
+# JavaScript-Quiz-Game
 
-In completing my homework assignment in which we are asked to build a timed code quiz with multiple-choice questions, I created a web page that says "Coding Quiz Challenge" as heading 1, and another heading with a Timer which begins at 60, showing the user they have 60 seconds to complete the quiz. They then are prompted with a button which says "Start the quiz!"
+JavaScript Quiz Game
 
-Upon clicking that button they are prompted with the first question and its possible answer choices. The timer begins counting down to 0 from 60. I was having trouble figuring out how to get the answers to state whether the user was "Correct!" or "Wrong!"
+<!-- Live link to deployed app -->
 
-When the user clicks their answer choice, the next answer choice selection is shown with the new question, both replacing the former question/answer choices. 
+Repository: https://github.com/Mdudzik92/JavaScript-Quiz-Game<br>
+Deployed app: https://mdudzik92.github.io/JavaScript-Quiz-Game/
 
-When the user had answered 3 total multiple choice questions, they were done and I had attemped to include a screen after the questions "All Done!", "Final Score: " + their score, with an initials box where they are told "Enter initials" and then a Submit button, which takes them to a page that says their initials and their high score. I was unable to finish this in time to turn in the homework and was majorly stumped. I did utilize Google as much as possible but may just need to get better at narrowing down what it is I'm trying to find through Googling or something to achieve better results next time. 
+<!-- Technologies used -->
 
-I was however able to prompt the user with "All done!" when the timer ran out. 
+JavaScript, HTML, CSS, Local Storage
 
-Links to deployed app:
-mdudzik92.github.io/homework04/
-https://github.com/Mdudzik92/homework04
+<!-- Explanation of what the app is -->
 
+This is a quiz app in which the user is prompted to answer five JavaScript-related questions. The user reads the instructions and clicks the button to start the game. A timer begins counting down from 90 seconds, deducting 15 seconds when the user gets an answer wrong. At the end they are given their score and can add their initials to be added to the high scores list on a separate page. The score data then persists in local storage.
 
+<!-- Screenshot -->
+
+<img src="./img1.png">
+<img src="./img2.png">
+<img src="./img3.png">
+<img src="./img4.png">
+
+<!-- License -->
+
+MIT
+
+<!-- Contact information -->
+
+Email: mdudzik92@gmail.com
