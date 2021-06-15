@@ -21,6 +21,10 @@ This is a quiz app in which the user is prompted to answer five JavaScript-relat
 <img src="./img/img2.png">
 <img src="./img/img3.png">
 
+<!-- Screencastify Link -->
+
+https://drive.google.com/file/d/1iBFY2MUyORVHF6wZtOg0S6ZqdcH871WW/view?usp=sharing
+
 <!-- License -->
 
 MIT
