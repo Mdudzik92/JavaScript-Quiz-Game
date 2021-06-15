@@ -119,5 +119,41 @@ function startTimer() {
 	}
 }
 
+function saveHighscore() {
+	// Getting value of input box
+	var initials = initialsEl.value.trim();
+
+	// Making sure value isn't empty
+	if (initials !== "") {
+		// Get saved scores from local storage, or if not any, set to empty array
+		var highscores =
+			JSON.parse(window.localStorage.getItem("highscores")) || [];
+
+		// Format new score object for current user
+		var newScore = {
+			score: time,
+			initials: initials,
+		};
+
+		// Save to local storage
+		highscores.push(newScore);
+		window.localStorage.setItem("highscores", JSON.stringify(highscores));
+
+		// Redirect to next page
+		window.location.href = "highscores.html";
+	}
+}
+
+function checkForEnter(event) {
+	if (event.key === "Enter") {
+		saveHighscore();
+	}
+}
+
+// Click the button to submit initials
+submitBtn.onclick = saveHighscore;
+
 // Click the button to start the quiz
 startBtn.onclick = startGame;
+
+initialsEl.onkeyup = checkForEnter;

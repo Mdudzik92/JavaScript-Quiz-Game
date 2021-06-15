@@ -1,21 +1,32 @@
 html,
 body {
-	background-color: #346751;
+	background: url(../img/background.jpg) no-repeat center center fixed;
+	background-color: #ad6a34;
 	color: #eff6eef1;
 	font-family: Arial;
 }
 
+h1,
+h2 {
+	font-family: "Vollkorn", serif;
+}
+
 a {
-	color: #310179;
+	color: #eff6eef1;
 	text-decoration: none;
 	transition: color 0.1s;
+}
+
+a:hover {
+	color: #ecdbba;
 }
 
 .wrapper {
 	margin: 100px auto 0 auto;
 	max-width: 600px;
-	background-color: #c84b31;
+	background-color: #5b270b;
 	padding: 15px;
+	border-style: outset;
 }
 
 .timer {
@@ -29,7 +40,7 @@ button {
 	margin: 5px;
 	cursor: pointer;
 	font-size: 100%;
-	background-color: #161616;
+	background-color: #a55b53;
 	border-radius: 5px;
 	padding: 2px 10px;
 	color: white;
@@ -38,11 +49,36 @@ button {
 }
 
 button:hover {
-	background-color: #ecdbba;
+	background-color: #deb887;
+}
+
+.choices button {
+	display: inline-block;
+}
+
+ol {
+	padding-left: 0px;
+	max-height: 400px;
+	overflow: auto;
+}
+
+li {
+	padding: 5px;
+	list-style: decimal inside none;
 }
 
 .hide {
 	display: none;
+}
+
+.start {
+	text-align: center;
+}
+
+.scores {
+	position: absolute;
+	top: 10px;
+	left: 10px;
 }
 
 .feedback {
@@ -50,6 +86,6 @@ button:hover {
 	font-size: 120%;
 	margin-top: 20px;
 	padding-top: 10px;
-	color: #4a3f35;
+	color: #ef5d58;
 	border-top: 2px solid #ccc;
 }
