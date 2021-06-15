@@ -17,10 +17,9 @@ This is a quiz app in which the user is prompted to answer five JavaScript-relat
 
 <!-- Screenshot -->
 
-<img src="./img1.png">
-<img src="./img2.png">
-<img src="./img3.png">
-<img src="./img4.png">
+<img src="./img/img1.png">
+<img src="./img/img2.png">
+<img src="./img/img3.png">
 
 <!-- License -->
 
